@@ -1,0 +1,15 @@
+<div>
+  <app-odd-players [first]="first" [third]="third" [fifth]="fifth"></app-odd-players>
+
+  <app-even-players [second]="second" [fourth]="fourth" [sixth]="sixth"></app-even-players>
+
+  <hr />
+
+  <h2>List of Indian Players Merged</h2>
+
+  <ul>
+    @for (player of mergedPlayers; track player) {
+      <li>{{ player }}</li>
+    }
+  </ul>
+</div>

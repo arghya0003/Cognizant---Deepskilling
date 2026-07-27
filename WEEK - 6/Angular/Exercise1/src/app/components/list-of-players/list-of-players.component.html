@@ -1,0 +1,19 @@
+<div>
+  <h2>List of Players</h2>
+
+  <ul>
+    @for (player of players; track player.name) {
+      <li>{{ player.name }} {{ player.score }}</li>
+    }
+  </ul>
+
+  <hr />
+
+  <h2>List of Players having Scores Less than 70</h2>
+
+  <ul>
+    @for (player of players70; track player.name) {
+      <li>{{ player.name }} {{ player.score }}</li>
+    }
+  </ul>
+</div>

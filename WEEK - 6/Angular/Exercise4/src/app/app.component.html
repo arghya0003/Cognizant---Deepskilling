@@ -1,0 +1,9 @@
+<div style="margin: 100px">
+  <app-greeting [isLoggedIn]="isLoggedIn"></app-greeting>
+
+  @if (isLoggedIn) {
+    <app-logout-button (clicked)="handleLogout()"></app-logout-button>
+  } @else {
+    <app-login-button (clicked)="handleLogin()"></app-login-button>
+  }
+</div>

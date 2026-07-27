@@ -1,0 +1,15 @@
+<div style="display: flex; justify-content: space-around; margin: 50px">
+  @if (showCourses) {
+    <app-course-details [courses]="courses"></app-course-details>
+  }
+
+  @if (showBooks) {
+    <app-book-details [books]="books"></app-book-details>
+  } @else {
+    <h2>No Books Available</h2>
+  }
+
+  @if (showBlogs) {
+    <app-blog-details [blogs]="blogs"></app-blog-details>
+  }
+</div>

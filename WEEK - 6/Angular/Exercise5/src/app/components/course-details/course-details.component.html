@@ -1,0 +1,12 @@
+<div style="border-right: 5px solid green; padding: 20px; width: 30%">
+  <div style="margin-left: 60px">
+    <h1>Course Details</h1>
+
+    @for (course of courses; track course.id) {
+      <div>
+        <h2>{{ course.cname }}</h2>
+        <h3>{{ course.date }}</h3>
+      </div>
+    }
+  </div>
+</div>

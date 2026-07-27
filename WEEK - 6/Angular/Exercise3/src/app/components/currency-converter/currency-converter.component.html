@@ -1,0 +1,29 @@
+<div>
+  <h1 style="color: green">Currency Convertor!</h1>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>Amount:</td>
+        <td>
+          <input type="number" [(ngModel)]="amount" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Currency:</td>
+        <td>
+          <input type="text" value="Euro" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <br />
+          <button (click)="handleSubmit()">Submit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

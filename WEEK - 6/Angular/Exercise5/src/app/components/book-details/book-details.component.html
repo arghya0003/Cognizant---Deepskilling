@@ -1,0 +1,10 @@
+<div style="border-right: 5px solid green; padding: 20px; width: 30%; margin-left: 20px">
+  <h1>Book Details</h1>
+
+  @for (book of books; track book.id) {
+    <div style="margin-left: 45px">
+      <h3>{{ book.bname }}</h3>
+      <h4>{{ book.price }}</h4>
+    </div>
+  }
+</div>

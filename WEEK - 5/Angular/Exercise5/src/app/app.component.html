@@ -1,0 +1,6 @@
+<div>
+  <h1>Cohorts Details</h1>
+  @for (cohort of cohortsData; track cohort.cohortCode) {
+    <app-cohort-details [cohort]="cohort"></app-cohort-details>
+  }
+</div>
